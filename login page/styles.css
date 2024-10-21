@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the form */
+    align-items: center;
+    background-image: url('back..jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 500px; /* Increased width */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.form-field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.register-btn, .login-btn {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn {
+    background-color: #ff7e39;
+    position: relative;
+}
+
+.register-btn:hover {
+    background-color: #e86a24;
+}
+
+.login-btn {
+    background-color: #4CAF50;
+    position: relative;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.train-icon, .car-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    transition: all 0.4s;
+}
+
+.train-icon {
+    left: -40px; /* Position it outside the button */
+    background-image: url('train.png');
+}
+
+.car-icon {
+    right: -40px; /* Position it outside the button */
+    background-image: url('car.png');
+}
+
+/* Animation on hover */
+.register-btn:hover .train-icon {
+    left: 10px; /* Move it into the button */
+}
+
+.login-btn:hover .car-icon {
+    right: 10px; /* Move it into the button */
+}

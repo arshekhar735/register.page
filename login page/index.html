@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide - Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <h1>Travel Guide</h1>
+            <p class="tagline">"Pack your bags, adventure awaits!"</p>
+            <form id="registerForm">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" required>
+                </div>
+                <div class="form-field">
+                    <label for="passport">Passport Number</label>
+                    <input type="text" id="passport" required>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms and Policies</a></label>
+                </div>
+                <div class="button-container">
+                    <button type="submit" id="registerBtn" class="register-btn">
+                        <span class="train-icon"></span>
+                        Register
+                    </button>
+                    <button id="loginBtn" class="login-btn">
+                        <span class="car-icon"></span>
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
